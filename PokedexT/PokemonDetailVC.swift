@@ -10,33 +10,41 @@ import UIKit
 
 class PokemonDetailVC: UIViewController {
 
-    var pokemon: Pokemon!
-    
-    
+    //IBOutlets
+    @IBOutlet var mainImg: UIImageView!
     @IBOutlet var pokemonNamelbl: UILabel!
+    @IBOutlet var descriptionLbl: UILabel!
+    @IBOutlet var typeLbl: UILabel!
+    @IBOutlet var defenseLbl: UILabel!
+    @IBOutlet var heightLbl: UILabel!
+    @IBOutlet var pokedexIdLbl: UILabel!
+    @IBOutlet var weightLbl: UILabel!
+    @IBOutlet var baseAttackLbl: UILabel!
+    @IBOutlet var currentEvoImg: UIImageView!
+    @IBOutlet var nextEvoImg: UIImageView!
+    @IBOutlet var evoLbl: UILabel!
     
+    @IBAction func backBtnPressed(sender: AnyObject) {
+    dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    var pokemon: Pokemon!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         pokemonNamelbl.text = pokemon.name
         
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
