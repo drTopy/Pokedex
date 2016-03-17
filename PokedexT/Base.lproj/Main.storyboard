@@ -176,6 +176,7 @@
                                         </constraints>
                                         <state key="normal" image="back"/>
                                         <connections>
+                                            <action selector="backBtnPressed:" destination="Yu3-Gx-UI2" eventType="touchUpInside" id="5lG-mP-h0T"/>
                                             <action selector="musicBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hhb-6W-Udl"/>
                                         </connections>
                                     </button>
@@ -370,7 +371,18 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="baseAttackLbl" destination="5ZP-oy-b4b" id="WOA-gz-sET"/>
+                        <outlet property="currentEvoImg" destination="Vpp-UD-oZZ" id="spX-Hp-eY3"/>
+                        <outlet property="defenseLbl" destination="uYd-5i-AJf" id="DEa-ND-9Z4"/>
+                        <outlet property="descriptionLbl" destination="VFh-Xb-ns7" id="G9N-1i-BFJ"/>
+                        <outlet property="evoLbl" destination="7un-jX-eQE" id="Mdo-va-q7H"/>
+                        <outlet property="heightLbl" destination="Tyq-sA-wyJ" id="Nq6-Ao-b9j"/>
+                        <outlet property="mainImg" destination="6Hp-lx-yb4" id="SLY-IR-Xm6"/>
+                        <outlet property="nextEvoImg" destination="ZTn-EX-UUE" id="AUi-59-rR3"/>
+                        <outlet property="pokedexIdLbl" destination="GhT-YW-8R8" id="oUf-RK-CUb"/>
                         <outlet property="pokemonNamelbl" destination="Lhj-mP-rFN" id="Wcy-Oh-RcH"/>
+                        <outlet property="typeLbl" destination="Ib2-bz-u2l" id="IMy-xe-Smy"/>
+                        <outlet property="weightLbl" destination="XcA-Mz-SVz" id="n3l-cn-Sjp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ga3-pH-iis" userLabel="First Responder" sceneMemberID="firstResponder"/>
